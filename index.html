@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Create Modal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="style.css" />
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="list-image">
+			<div class="row">
+				<div class="col-3">
+					<img src="https://scontent.fhan12-1.fna.fbcdn.net/v/t39.30808-6/242232601_1291184817987735_6485321739381788213_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=cPgHloeDpSAAX-FsURF&tn=Gh5uQ8uUxwuYraj_&_nc_ht=scontent.fhan12-1.fna&oh=00_AT-SeWNAEWneOumakwJeTEyvwUGAyPcOcz0QdAbzTyEAhg&oe=62A27380"
+						alt="" class="w-100">
+				</div>
+				<div class="col-3">
+					<img src="https://scontent.fhan12-1.fna.fbcdn.net/v/t39.30808-6/240588676_1270517673387783_792183499566296164_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=syOgQwbKKngAX-pocMp&_nc_ht=scontent.fhan12-1.fna&oh=00_AT-OomC2jj8y2uXUAzObOtDP_OFsmivBN1AihnweVaEp6Q&oe=62A2EA35"
+						alt="" class="w-100">
+				</div>
+				<div class="col-3">
+					<img src="https://scontent.fhan12-1.fna.fbcdn.net/v/t39.30808-6/278858704_1406445223128360_3413899885287467765_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=iMqOXIwM0P8AX9l3POj&_nc_ht=scontent.fhan12-1.fna&oh=00_AT9SsKqiGeWAn0b2pv1VEf6nu_FnRl9OuFR1dtb26rVRQg&oe=62A2A09F"
+						alt="" class="w-100">
+				</div>
+
+				<div class="col-3">
+					<img src="https://scontent.fhan12-1.fna.fbcdn.net/v/t1.6435-9/120137894_1024856361287250_1963734008414566566_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=dvq_B6N8XkYAX8Ta8Fk&_nc_ht=scontent.fhan12-1.fna&oh=00_AT88oeFJ-h05azBj8mkssn2zDsiZJUwSDZMmuu31WpvYuw&oe=62C537D2"
+						alt="" class="w-100">
+				</div>
+				<div class="col-3">
+					<img src="https://scontent.fhan12-1.fna.fbcdn.net/v/t1.6435-9/106993928_959261884513365_1156882579464700317_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=ButqH4qzAnsAX8EcG53&_nc_ht=scontent.fhan12-1.fna&oh=00_AT8jTl6ieuHiV0vrXWp4X-kOTN_hGInt8Wn1CQlLVJN5HA&oe=62C3CCB4"
+						alt="" class="w-100">
+				</div>
+				<div class="col-3">
+					<img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/261715653_1310682399371310_1656088793678816946_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=KyLQGgM0CPsAX-_n83q&_nc_ht=scontent.fhan2-4.fna&oh=00_AT9CtwHhAe6n8I7KhW0havd9vly7drnLc6R4RUUtBKiEsQ&oe=62A37109"
+						alt="" class="w-100">
+				</div>
+			</div>
+		</div>
+		<div class="audio-box">
+			<audio controls>
+				<source src="./[Vietsub+Lyrics] Nothing On You - Barry Brizzy Cuộc sống bình yên..mp3">
+			</audio>
+		</div>
+		<div class="open-modal-btn-box">
+			<button class="open-modal-btn">Bấm vào đây nhé &nbsp; <i class="fas fa-grin"></i></button>
+		</div>
+		<div class="modal hide">
+			<div class="modal__inner">
+				<div class="modal__header">
+					<p>Thu Ngân <i class="fas fa-heart"></i></p>
+					<i class="fas fa-times close-modal"></i>
+				</div>
+				<div class="modal__body">
+					<h2>Gửi Thu Ngân !!!</h2>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Hơi...zzz , không biết phải nói như nào nữa, Ngân à anh đã lỡ thích em
+						rồi. Em là người hay quan sát cũng nhận ra từ những hành động của anh. Mà chuyện em bảo anh là
+						người
+						hay nóng tính, đấy chỉ là đối với người ngoài và trong công việc thôi còn đối với gia đình và
+						người
+						anh yêu thì không bao giờ xảy ra
+						<i style="color: #e67e22" class="fas fa-meh"></i>
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;À anh xin lỗi chuyện cứ bảo em là bỏ khẩu trang nhé. Thật ra thứ anh
+						thích ở em là bên trong chứ không phải vẻ bề ngoài đâu
+						<i style="color: #e67e22" class="fas fa-meh"></i>
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Hiện tại anh không đẹp trai :(( , vẫn đang là còn sinh viên chưa có gì
+						trong tay. Nhưng anh
+						hứa sẽ cố gắng thật nhiều... Chỉ cần em tin vào anh thôi
+						<i style="color: #e67e22" class="fas fa-meh"></i>
+					</p>
+					<p>Làm người yêu anh nhé Thu Ngân. </p>
+					<br>
+					<p class="" style="text-align: center;">Anh : Nguyễn Ngọc Uy <i style="color: #e67e22"
+							class="fas fa-meh-blank"></i></p>
+				</div>
+				<div class="modal__footer">
+					<button>Đóng</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="app.js"></script>
+
+</body>
+
+</html>
